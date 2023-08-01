@@ -1,0 +1,417 @@
+@media (min-width: 300px) and (max-width: 575.98px) { 
+    .section-1{
+        position: relative;
+        width: 100vw;
+        top: -1.95rem;
+        left: 5px;
+    }
+    .section3 {
+        position: fixed;
+        top: 0rem;
+        right: 15px;
+    }
+
+    .section2{
+        margin-left: 0%;
+        width: 100vw;
+    }
+    /* <!-- example navbar --> */
+
+    .nav{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 100;
+        visibility: visible;
+    }
+    .nav>li{
+        text-align: center;
+    }
+
+    .bar{
+        display: inline;
+    }
+    .navbar{
+        visibility: hidden !important;
+    }
+    .subtitle {
+        font-size: 10px;
+        padding: 8px 10px;
+        margin-bottom: 14px;
+        margin: 0px 0px 20px 0;
+    }
+    .service-item {
+        padding: 5px 70px 11px 30px;
+    }
+    .service-text > i {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    .service-text > i {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    /* .skill-rl{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 25px;
+    } */
+    .skill-inner {
+        margin: 0 100px 0 -70px;
+    }
+    .skill > p {
+        margin: 20px 80px 0 -90px;
+    }
+    .subtitle>i {
+        font-size: 12px;
+        margin-right: 14px;
+    }
+    .intro>h1{
+        font-size: 25px;
+        letter-spacing: 0px;
+        line-height: 35px;
+        margin-bottom: 20px;
+    }
+    .intro>p{
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+    .round-text{
+        margin-right: -4rem !important;
+        margin-left: 1rem !important;
+    }
+    .rotate{
+        animation: rotation 6s infinite linear;
+        width: 80px;
+        height: 80px;
+    }
+    .avlogo {
+        opacity: 0.6;
+        width: 37px;
+        position: relative;
+        right: 60px;
+        bottom: 0px;
+    }
+    /* .about-main{
+        padding-bottom: 1rem !important;
+        padding-top: 1rem !important;
+    } */
+    .about-data>p{
+        font-size: 12px;
+    }
+    .about-para{
+        font-size: 14px!important;
+    }
+
+    .resume-main{
+        padding-bottom: 1rem !important;
+        padding-top: 1rem !important;
+    }
+    .resume-data>h3{
+        font-size: 26px;
+    }
+    .resume-items {
+        position: relative;
+        padding-left: 25px;
+        padding-bottom: 68px;
+    }
+    .service-item {
+        margin-right: 0px;
+    }
+    .skils-items{  
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*  */
+    .portfolio-main {
+        margin: 30px 0px 30px 0;
+    }
+    .ok {
+        width: 100%;
+        height: 180px;
+    }
+    .portfolio-text>h3{
+        margin-top:20px;
+    }
+    .needs-validation {
+        margin-right: 0px;
+    }
+}
+/* ----------------------- */
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px)  and (max-width: 767.98px) { 
+    .section-1{
+        position: relative;
+        width: 100vw;
+        top: -2rem;
+    }
+    .section-1>.card{
+        width: 100vw;
+    }
+    .section3 {
+        position: fixed;
+        top: 0rem;
+        right: 15px;
+    }
+    .navbar{
+        visibility: hidden;
+    }
+
+    .nav{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 100;
+        visibility: visible;
+    }
+    .nav>li{
+        text-align: center;
+    }
+
+    .bar{
+        display: inline;
+    }
+
+    .profile {
+        position: absolute;
+        width: 120px;
+        bottom: -55px;
+        left: 45px;
+    }
+    .profile-name {
+        font-size: 20px;
+        margin: 34px 7px -46px 13px;
+        color: #ffffff;
+    }
+    .subtitle {
+        margin: 20px 0px;
+    }
+
+    .ok {
+        width: 100%;
+        height: 260px;
+    }
+
+
+    .intro > h1 {
+        font-size: 32px;
+        letter-spacing: 0px;
+        line-height: 36px;
+        margin-bottom: 14px;
+        font-weight: 300;
+    }
+    .intro > p {
+        font-size: 1.1rem;
+    }
+    .round-text {
+        margin-right: -3rem !important;
+        margin-left: 3rem !important;
+    }
+    .service-item {
+        margin-right: 0px;
+    }
+    .skils-items{  
+        display: flex;
+        flex-direction: row;
+        margin: 0rem !important
+    }
+    /* .skill-rl{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 25px;
+    } */
+    .skill-inner {
+        margin: 0 30px;
+    }
+    .skill > p {
+        margin-bottom: 20px;
+    }
+
+    /* portfolio */
+    .portfolio-main {
+        margin: 30px 0px 30px 0;
+    }
+    .needs-validation {
+        margin-right: 0px;
+    }
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px)
+and (max-width: 991.98px) { 
+    /* .section-1{
+        position: relative;
+        width: 100vw;
+        top: 1rem;
+    }
+    .section-1>.card{
+        width: 100vw;
+    } */
+    .section-1 {
+        position: relative;
+        left: 218px;
+        top: -5rem;
+    }
+    .section3 {
+        position: fixed;
+        top: 0.5rem;
+        right: 0px;
+    }
+    .navbar-nav{
+        margin-top: 40px;
+    }
+    .nav{
+        visibility: hidden;
+    }
+    .service-item {
+        margin-right: 0px;
+    }
+    /*---portfolio---*/
+    .portfolio-main {
+        margin: 30px 0px 30px 0;
+    }
+    .needs-validation {
+        margin-right: 0px;
+    }
+
+    /* ---medium-devices--- */
+    .medium-devices{
+        margin-right: 10px !important;
+    }
+    .ok {
+        width: 97%;
+        height: 270px;
+    }
+    .skils-items{
+        margin: 30px 78px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 0rem !important
+    }
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px){ 
+    .nav{
+        visibility: hidden;
+    }
+    .section-1 {
+        position: fixed;
+        left: 0;
+        top: -1rem;
+    }
+
+    .section3 {
+        position: fixed;
+        top: 7.5rem;
+        right: 0px;
+    }
+
+    .intro > h1 {
+        font-size: 48px;
+        letter-spacing: 0.8px;
+        line-height: 61px;
+        margin-bottom: 30px;
+    }
+    .round-text {
+        margin-right: 0rem !important;
+        margin-left: 3rem !important;
+    }
+
+    /* .skils-items{
+        margin:;
+    } */
+    .skills-main{
+        padding-bottom: 0rem !important;
+    }
+    .skill-inner {
+        border: 2px solid #565656;
+        border-radius: 85px;
+        padding: 54px 0 48px 0;
+        margin-bottom: 20px;
+        transition: .3s;
+        text-align: center;
+        margin: 0px;
+    }
+    .skill-inner > img {
+        margin: 15px;
+        width: 50%;
+        width: 75px;
+    }
+    .portfolio-main {
+        margin: 30px 5px 0px 0;
+    }
+    .ok {
+        width: 100%;
+        height: 270px;
+    }
+    .needs-validation {
+        margin-right: 10px;
+    }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+    .nav{
+        visibility: hidden;
+    }
+    
+    /* ---sec-1-cards-- */
+
+    .section-1 {
+        position: fixed;
+        left: 0;
+        top: 1rem;
+    }
+
+    .service-item {
+        border: 1px solid #4f4f4f;
+        border-radius: 20px;
+        transition: .3s;
+        position: relative;
+        padding: 44px 48px 41px 48px;
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+    .portfolio-main {
+        margin: 30px 0px 30px 0;
+    }
+    .ok {
+        width: 100%;
+        height: 315px;
+    }
+    .needs-validation {
+        margin-right: 0px;
+    }
+
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    .nav{
+        visibility: hidden;
+    }
+}
