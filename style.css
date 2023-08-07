@@ -13,6 +13,8 @@ body {
     background: #FCE97F;
     animation: fadeBackground 10s 4s infinite;
     animation-fill-mode: forwards;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 @keyframes fadeBackground {
     from { background-color: #1f1f1f; }
