@@ -389,7 +389,7 @@ and (max-width: 991.98px) {
     .section-1 {
         position: fixed;
         left: 0;
-        top: 1rem;
+        top: 0rem;
     }
 
     .service-item {
