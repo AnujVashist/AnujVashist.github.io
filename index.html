@@ -702,11 +702,11 @@
                     <h3 class="text-white fs-1 fw-light data-margin">Fill <span class="intro-span">Details</span></h3>
                 </div>
 
-                <form class="needs-validation ">
+                <form class="needs-validation" id="myForm" name="contactForm" onsubmit="sendEmail(); reset(); return false;">
                     <div class="row g-3">
                         <div class=" col-xm-12 col-sm-12  col-md-12 col-lg-12  ">
                             <label for="firstName" class="form-label">First name</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <input type="text" class="form-control" id="first_name" name="first_name" placeholder="" value="" required>
                             <div class="invalid-feedback">
                                 Valid first name is required.
                             </div>
@@ -714,7 +714,7 @@
 
                         <div class="col-xm-12 col-sm-12  col-md-12 col-lg-12">
                             <label for="lastName" class="form-label">Last name</label>
-                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                            <input type="text" class="form-control" name="last_name" id="last_name" placeholder="" value="" required>
                             <div class="invalid-feedback">
                                 Valid last name is required.
                             </div>
@@ -722,17 +722,17 @@
 
                         <div class="col-xm-12 col-sm-12  col-md-12 col-lg-12 col-12">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="you@example.com" required>
                             <div class="invalid-feedback">
                                 Please enter a valid email address for shipping updates.
                             </div>
                         </div>
 
                         <div class=" col-xm-12 col-sm-12  col-md-12 col-lg-12 col-12">
-                            <label for="username" class="form-label">Username</label>
+                            <label for="username" class="form-label">Phone NO.</label>
                             <div class="input-group has-validation">
                                 <span class="input-group-text"><i class="fa-solid fa-phone"></i></span>
-                                <input type="text" class="form-control" id="username" placeholder="Phone No." required>
+                                <input class="form-control" type="tel" name="phone" id="phone" placeholder="Phone No." required>
                                 <div class="invalid-feedback">
                                     Your phone no. is required.
                                 </div>
@@ -741,7 +741,7 @@
 
                         <div class=" col-xm-12 col-sm-12  col-md-12 col-lg-12 col-12">
                             <label for="address" class="form-label">Address</label>
-                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                            <input type="text" class="form-control" name="address" id="address" placeholder="1234 Main St" required>
                             <div class="invalid-feedback">
                                 Please enter your shipping address.
                             </div>
@@ -750,7 +750,7 @@
                         <div class=" col-xm-12 col-sm-12  col-md-12 col-lg-12 col-12">
                             <label for="address" class="form-label">Comments</label>
                             <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+                                <textarea class="form-control" placeholder="Leave a comment here" name="message" id="message"
                                     style="height: 100px"></textarea>
                             </div>
                         </div>
@@ -778,6 +778,24 @@
 
     <!-- bootstrap_bundle -->
     <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <!-- emailjs -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    function sendEmail(){
+        emailjs.init("S4GfFxgU48flqqDYe");
+
+    emailjs.sendForm('service_9ou1y9w', 'template_9se30ia', '#myForm')
+        .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+        }, function(error) {
+        console.log('FAILED...', error);
+        });
+
+    };
+</script>
 
 </body>
 
